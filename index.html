@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi | Landing Page</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/styleResponsive.css">
+
+</head>
+
+<body>
+
+    <section class="sec">
+
+        <!-- Navegação -->
+        <header>
+            <a href="#"> <img src="/assets/logo.png" alt="logo" class="logo"></a>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </header>
+
+        <!-- Conteudo -->
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What <br><span>I like</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur optio eaque assumenda quas animi iusto velit, provident doloribus placeat ea eos nulla est delectus repellendus sunt molestias expedita debitis laudantium.
+                </p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="/assets/pepsi001.png" alt="img" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li>
+                <img src="/assets/pepsi001.png" onclick="imgSlider('/assets/pepsi001.png');
+                        changeBgColor('#0062be')">
+            </li>
+
+            <li>
+                <img src="/assets/pepsi002.png" onclick="imgSlider('/assets/pepsi002.png');
+                        changeBgColor('#e60c2c')">
+            </li>
+
+            <li>
+                <img src="/assets/pepsi003.png" onclick="imgSlider('/assets/pepsi003.png');
+                        changeBgColor('#1e1e1e')">
+            </li>
+        </ul>
+
+        <!-- Redes sociais -->
+
+        <ul class="sci">
+            <li>
+                <a href="#"><img src="/assets/facebook.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="/assets/twitter.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="/assets/instagram.png"></a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="/main.js"></script>
+
+
+</body>
+
+</html>
