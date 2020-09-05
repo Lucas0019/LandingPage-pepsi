@@ -3,4 +3,4 @@
 
 ## 🖥 Preview
 
-<img  src="/assets/pepsi.png">
+<img  src="/images/mockuper.png">
