@@ -3,6 +3,7 @@
 @media(max-width: 991px) {
     selection {
         padding: 40px;
+        padding-bottom: 140px;
     }
     header {
         padding: 20px 40px;
@@ -26,6 +27,11 @@
         transition: 0.5s;
         visibility: hidden;
         opacity: 0;
+        font-size: 40px;
+    }
+    header ul.active {
+        visibility: visible;
+        opacity: 1;
     }
     header ul li a {
         display: inline-block;
@@ -48,5 +54,52 @@
         background-repeat: no-repeat;
         z-index: 2;
         cursor: pointer;
+    }
+    .toggleMenu.active {
+        background: url(/assets/close.png);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        filter: invert(1);
+    }
+    .content {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .content .textBox {
+        position: relative;
+        max-width: 100%;
+        padding-right: 20px;
+    }
+    .content .textBox h2 {
+        font-size: 3em;
+    }
+    .content .textBox a {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    .content .imgBox {
+        width: 100%;
+        display: flex;
+        padding-left: 50px;
+        justify-content: center;
+    }
+    .content .imgBox img {
+        max-width: 150px;
+    }
+    .thumb li img {
+        padding-right: 2px;
+        max-width: 30px;
+    }
+    .sci {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 50px;
+        background: rgba(0, 0, 0, 0.2);
+        transform: translate(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
