@@ -1,5 +1,52 @@
-@media (max-width: 600px) {
-    div {
-        background: rgb(238, 255, 0);
+/* Responsividade */
+
+@media(max-width: 991px) {
+    selection {
+        padding: 40px;
+    }
+    header {
+        padding: 20px 40px;
+    }
+    header .logo {
+        position: relative;
+        max-width: 60px;
+    }
+    /* menu mobile */
+    header ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+        visibility: hidden;
+        opacity: 0;
+    }
+    header ul li a {
+        display: inline-block;
+        color: #111;
+        font-weight: 400;
+        margin-left: 0;
+        text-decoration: 2em;
+        margin: 10px 0;
+    }
+    header ul li a:hover {
+        color: #ed0223;
+    }
+    .toggleMenu {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(/assets/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        z-index: 2;
+        cursor: pointer;
     }
 }
